@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="PT-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <!-- Style CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/ezjqphcn.json" trigger="in" delay="1500" state="in-reveal"
+            colors="primary:#9cc2f4,secondary:#66ee78" style="width:100px;height:100px">
+        </lord-icon>
+        <div id="container">
+            <h1>Encurtador de URL</h1>
+            <p>Sua solução ideal para reduzir instantaneamente URLs longos e complicados em links elegantes e compartilháveis!</p>
+            <div class="url-input">
+                <input type="url" id="urlInput" placeholder="Insira sua URL">
+                <button onclick="shortenURL()" id="shortenBtn">Encurtar URL</button>  
+            </div>
+            <div id="result" style="display: none;">
+                <p>URL encurtada:</p>
+                <a href="" target="_blank" id="shortenedURL"></a>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+        </div>
+    </div>
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
